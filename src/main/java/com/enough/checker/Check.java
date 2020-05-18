@@ -24,4 +24,5 @@ public @interface Check {
      * 对方法中的哪一个参数进行校验
      */
     Class argClass();
+
 }

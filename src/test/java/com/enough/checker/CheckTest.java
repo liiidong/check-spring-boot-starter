@@ -32,7 +32,7 @@ public class CheckTest {
 
     @Test
     public void testCheck() {
-        User user = Builder.of(User::new).with(User::setAge, 11).build();
+        User user = Builder.of(User::new).with(User::setAge, null).build();
         Book book = Builder.of(Book::new).with(Book::setName, "zhangsan").build();
         checkService.check(user, book);
     }

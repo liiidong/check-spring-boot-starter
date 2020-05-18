@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class CheckService {
 
-    @Check(argClass = CheckTest.User.class,value = {"age != null"})
-    public void check(CheckTest.User usr, CheckTest.Book book){
+    @Check(argClass = CheckTest.User.class, value = {"age != null : 年龄不能为null！"})
+    public void check(CheckTest.User usr, CheckTest.Book book) {
         System.out.println(JSON.toJSONString(book));
         System.out.println(JSON.toJSONString(usr));
     }
